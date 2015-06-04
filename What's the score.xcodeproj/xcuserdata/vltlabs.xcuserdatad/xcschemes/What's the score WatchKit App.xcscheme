@@ -14,6 +14,20 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
+               BlueprintIdentifier = "3B4D553D1B1DEA34007B64A6"
+               BuildableName = "What&apos;s the score WatchKit App.app"
+               BlueprintName = "What&apos;s the score WatchKit App"
+               ReferencedContainer = "container:What&apos;s the score.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "YES"
+            buildForProfiling = "YES"
+            buildForArchiving = "YES"
+            buildForAnalyzing = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
                BlueprintIdentifier = "3B4D55071B1DEA19007B64A6"
                BuildableName = "What&apos;s the score.app"
                BlueprintName = "What&apos;s the score"
@@ -23,14 +37,14 @@
          <BuildActionEntry
             buildForTesting = "YES"
             buildForRunning = "YES"
-            buildForProfiling = "NO"
-            buildForArchiving = "NO"
+            buildForProfiling = "YES"
+            buildForArchiving = "YES"
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "3B4D551F1B1DEA1A007B64A6"
-               BuildableName = "What&apos;s the scoreTests.xctest"
-               BlueprintName = "What&apos;s the scoreTests"
+               BlueprintIdentifier = "3B4D55331B1DEA33007B64A6"
+               BuildableName = "What&apos;s the score WatchKit Extension.appex"
+               BlueprintName = "What&apos;s the score WatchKit Extension"
                ReferencedContainer = "container:What&apos;s the score.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -42,23 +56,13 @@
       shouldUseLaunchSchemeArgsEnv = "YES"
       buildConfiguration = "Debug">
       <Testables>
-         <TestableReference
-            skipped = "NO">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "3B4D551F1B1DEA1A007B64A6"
-               BuildableName = "What&apos;s the scoreTests.xctest"
-               BlueprintName = "What&apos;s the scoreTests"
-               ReferencedContainer = "container:What&apos;s the score.xcodeproj">
-            </BuildableReference>
-         </TestableReference>
       </Testables>
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "3B4D55071B1DEA19007B64A6"
-            BuildableName = "What&apos;s the score.app"
-            BlueprintName = "What&apos;s the score"
+            BlueprintIdentifier = "3B4D553D1B1DEA34007B64A6"
+            BuildableName = "What&apos;s the score WatchKit App.app"
+            BlueprintName = "What&apos;s the score WatchKit App"
             ReferencedContainer = "container:What&apos;s the score.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
@@ -72,16 +76,27 @@
       ignoresPersistentStateOnLaunch = "NO"
       debugDocumentVersioning = "YES"
       allowLocationSimulation = "YES">
-      <BuildableProductRunnable
-         runnableDebuggingMode = "0">
+      <RemoteRunnable
+         runnableDebuggingMode = "2"
+         BundleIdentifier = "com.apple.springboard"
+         RemotePath = "/What&apos;s the score">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "3B4D55071B1DEA19007B64A6"
-            BuildableName = "What&apos;s the score.app"
-            BlueprintName = "What&apos;s the score"
+            BlueprintIdentifier = "3B4D553D1B1DEA34007B64A6"
+            BuildableName = "What&apos;s the score WatchKit App.app"
+            BlueprintName = "What&apos;s the score WatchKit App"
             ReferencedContainer = "container:What&apos;s the score.xcodeproj">
          </BuildableReference>
-      </BuildableProductRunnable>
+      </RemoteRunnable>
+      <MacroExpansion>
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "3B4D553D1B1DEA34007B64A6"
+            BuildableName = "What&apos;s the score WatchKit App.app"
+            BlueprintName = "What&apos;s the score WatchKit App"
+            ReferencedContainer = "container:What&apos;s the score.xcodeproj">
+         </BuildableReference>
+      </MacroExpansion>
       <AdditionalOptions>
       </AdditionalOptions>
    </LaunchAction>
@@ -91,16 +106,27 @@
       useCustomWorkingDirectory = "NO"
       buildConfiguration = "Release"
       debugDocumentVersioning = "YES">
-      <BuildableProductRunnable
-         runnableDebuggingMode = "0">
+      <RemoteRunnable
+         runnableDebuggingMode = "2"
+         BundleIdentifier = "com.apple.springboard"
+         RemotePath = "/What&apos;s the score">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "3B4D55071B1DEA19007B64A6"
-            BuildableName = "What&apos;s the score.app"
-            BlueprintName = "What&apos;s the score"
+            BlueprintIdentifier = "3B4D553D1B1DEA34007B64A6"
+            BuildableName = "What&apos;s the score WatchKit App.app"
+            BlueprintName = "What&apos;s the score WatchKit App"
             ReferencedContainer = "container:What&apos;s the score.xcodeproj">
          </BuildableReference>
-      </BuildableProductRunnable>
+      </RemoteRunnable>
+      <MacroExpansion>
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "3B4D553D1B1DEA34007B64A6"
+            BuildableName = "What&apos;s the score WatchKit App.app"
+            BlueprintName = "What&apos;s the score WatchKit App"
+            ReferencedContainer = "container:What&apos;s the score.xcodeproj">
+         </BuildableReference>
+      </MacroExpansion>
    </ProfileAction>
    <AnalyzeAction
       buildConfiguration = "Debug">

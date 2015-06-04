@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="7702" systemVersion="14D136" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="AgC-eL-Hgc">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7701"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="3737"/>
+    </dependencies>
+    <scenes>
+        <!--Home-->
+        <scene sceneID="aou-V4-d1y">
+            <objects>
+                <controller title="Home" id="AgC-eL-Hgc" customClass="InterfaceController" customModule="What_s_the_score_WatchKit_App" customModuleProvider="target">
+                    <items>
+                        <label width="136" alignment="left" text="Add Point:" textAlignment="center" id="47E-Gq-kTX"/>
+                        <separator alignment="left" id="6a7-mO-V6N"/>
+                        <group width="1" alignment="left" id="AIS-Zg-pDT">
+                            <items>
+                                <button width="0.3333333" alignment="left" title="+1" id="KbE-OU-ckj">
+                                    <connections>
+                                        <action selector="addOnePointButtonPressed" destination="AgC-eL-Hgc" id="3kh-m3-k5d"/>
+                                    </connections>
+                                </button>
+                                <button width="0.3333333" alignment="left" title="+2" id="wDl-oD-Cr1">
+                                    <connections>
+                                        <action selector="addTwoButtonPressed" destination="AgC-eL-Hgc" id="mTQ-3j-aMr"/>
+                                    </connections>
+                                </button>
+                                <button width="0.3333333" alignment="left" title="+3" id="iXa-B0-1Hd">
+                                    <connections>
+                                        <action selector="addThreePointsButtonPressed" destination="AgC-eL-Hgc" id="50h-K5-xUm"/>
+                                    </connections>
+                                </button>
+                            </items>
+                        </group>
+                        <label width="136" alignment="left" text="Subtract Point:" textAlignment="center" id="pAQ-HS-e8a"/>
+                        <separator alignment="left" id="X4D-fd-l2q"/>
+                        <group width="1" alignment="left" id="uN9-p8-sp5">
+                            <items>
+                                <button width="0.3333333" alignment="left" title="-1" id="z2y-sI-zvV">
+                                    <connections>
+                                        <action selector="minusOnePointButtonPressed" destination="AgC-eL-Hgc" id="lIj-hT-adk"/>
+                                    </connections>
+                                </button>
+                                <button width="0.3333333" alignment="left" title="-2" id="e7Z-in-gCQ">
+                                    <connections>
+                                        <action selector="minusTwoPointsButtonPressed" destination="AgC-eL-Hgc" id="yOG-tf-PSh"/>
+                                    </connections>
+                                </button>
+                                <button width="0.3333333" alignment="left" title="-3" id="H0l-uW-0GF">
+                                    <connections>
+                                        <action selector="minusThreePointsButtonPressed" destination="AgC-eL-Hgc" id="9pr-Tw-3L4"/>
+                                    </connections>
+                                </button>
+                            </items>
+                        </group>
+                        <label width="136" alignment="left" text="Team Color" textAlignment="center" id="Aqu-IB-JUY"/>
+                        <separator alignment="left" id="v8o-hU-heE"/>
+                        <group width="1" alignment="left" id="Uha-CO-e9Q">
+                            <items>
+                                <button width="0.5" alignment="left" title="Blue" id="lZ1-Sv-IOB">
+                                    <connections>
+                                        <action selector="onBlueButtonPressed" destination="AgC-eL-Hgc" id="RS0-LD-Pyu"/>
+                                    </connections>
+                                </button>
+                                <button width="0.5" alignment="left" title="Red" id="9v0-5Q-Tjh">
+                                    <connections>
+                                        <action selector="onRedButtonPressed" destination="AgC-eL-Hgc" id="ZRV-Fe-VnT"/>
+                                    </connections>
+                                </button>
+                            </items>
+                        </group>
+                    </items>
+                    <connections>
+                        <outlet property="addPointHeaderLabel" destination="47E-Gq-kTX" id="zAj-Nt-8wh"/>
+                        <outlet property="substractPointHeaderLabel" destination="pAQ-HS-e8a" id="k3L-eE-QQY"/>
+                        <outlet property="teamColorHeaderLabel" destination="Aqu-IB-JUY" id="8a1-Ux-1Hz"/>
+                        <segue destination="nlT-OH-t9i" kind="relationship" relationship="nextPage" id="wMl-IR-wNP"/>
+                    </connections>
+                </controller>
+            </objects>
+        </scene>
+        <!--Teams Score Interface Controller-->
+        <scene sceneID="Pk3-8q-54y">
+            <objects>
+                <controller id="nlT-OH-t9i" customClass="TeamsScoreInterfaceController" customModule="What_s_the_score_WatchKit_Extension">
+                    <items>
+                        <label width="136" alignment="left" text="Score" textAlignment="center" id="RYV-xp-P3b"/>
+                        <group width="1" alignment="left" id="4uP-ko-ByW">
+                            <items>
+                                <group width="0.5" alignment="left" layout="vertical" id="6q9-IL-AqC" userLabel="Home">
+                                    <items>
+                                        <label width="136" alignment="left" text="Home" textAlignment="center" id="eAZ-xU-8b5"/>
+                                        <label width="136" alignment="left" text="50" textAlignment="center" id="CbK-iv-jS7"/>
+                                    </items>
+                                </group>
+                                <group width="0.5" alignment="left" layout="vertical" id="iqI-EZ-ava" userLabel="Away">
+                                    <items>
+                                        <label width="136" alignment="left" text="Away" textAlignment="center" id="m6a-F0-g2a"/>
+                                        <label width="136" alignment="left" text="22" textAlignment="center" id="KEu-u8-7Mw"/>
+                                    </items>
+                                </group>
+                            </items>
+                        </group>
+                    </items>
+                    <connections>
+                        <outlet property="awayHeaderLabel" destination="m6a-F0-g2a" id="Vk8-kQ-KpK"/>
+                        <outlet property="awayTeamScoreLabel" destination="KEu-u8-7Mw" id="kEi-hg-FZK"/>
+                        <outlet property="homeHeaderLabel" destination="eAZ-xU-8b5" id="yVf-wK-TeS"/>
+                        <outlet property="homeTeamScoreLabel" destination="CbK-iv-jS7" id="xX6-ZG-wLZ"/>
+                        <segue destination="L6Z-56-y9C" kind="relationship" relationship="nextPage" id="gGz-re-Sgg"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="476" y="313"/>
+        </scene>
+        <!--Away-->
+        <scene sceneID="Kta-Br-qAD">
+            <objects>
+                <controller title="Away" id="L6Z-56-y9C" customClass="AwayInterfaceController" customModule="What_s_the_score_WatchKit_Extension">
+                    <items>
+                        <label width="136" alignment="left" text="Add Point:" textAlignment="center" id="gAA-B8-bxg"/>
+                        <separator alignment="left" id="Oiv-Cz-tkk"/>
+                        <group width="1" alignment="left" id="mbq-Sp-6Bm">
+                            <items>
+                                <button width="0.3333333" alignment="left" title="+1" id="BvL-lA-c18">
+                                    <connections>
+                                        <action selector="addOnePointButtonPressed" destination="L6Z-56-y9C" id="Zja-43-GVC"/>
+                                    </connections>
+                                </button>
+                                <button width="0.3333333" alignment="left" title="+2" id="eEO-zN-Lqv">
+                                    <connections>
+                                        <action selector="addTwoPointsButtonPressed" destination="L6Z-56-y9C" id="qGh-r9-suj"/>
+                                    </connections>
+                                </button>
+                                <button width="0.3333333" alignment="left" title="+3" id="Vk2-nf-4v6">
+                                    <connections>
+                                        <action selector="addThreePointsButtonPressed" destination="L6Z-56-y9C" id="Wd5-lV-O5M"/>
+                                    </connections>
+                                </button>
+                            </items>
+                        </group>
+                        <label width="136" alignment="left" text="Subtract Point:" textAlignment="center" id="nji-jL-hlz"/>
+                        <separator alignment="left" id="Qvy-8b-XO1"/>
+                        <group width="1" alignment="left" id="62d-gG-Uuu">
+                            <items>
+                                <button width="0.3333333" alignment="left" title="-1" id="zSJ-AL-vSQ">
+                                    <connections>
+                                        <action selector="minusOnePointButtonPressed" destination="L6Z-56-y9C" id="hKC-Y8-Amb"/>
+                                    </connections>
+                                </button>
+                                <button width="0.3333333" alignment="left" title="-2" id="4hq-ge-QAD">
+                                    <connections>
+                                        <action selector="minusTwoPointsButtonPressed" destination="L6Z-56-y9C" id="8bl-pJ-nKl"/>
+                                    </connections>
+                                </button>
+                                <button width="0.3333333" alignment="left" title="-3" id="FSf-3P-HxO">
+                                    <connections>
+                                        <action selector="minusThreePointsButtonPressed" destination="L6Z-56-y9C" id="yMc-UM-0d9"/>
+                                    </connections>
+                                </button>
+                            </items>
+                        </group>
+                        <label width="136" alignment="left" text="Team Color" textAlignment="center" id="x2R-mT-4fV"/>
+                        <separator alignment="left" id="gke-KU-k2E"/>
+                        <group width="1" alignment="left" id="kfD-Kv-3UO">
+                            <items>
+                                <button width="0.5" alignment="left" title="Blue" id="Dih-IW-XqV">
+                                    <connections>
+                                        <action selector="onBlueColorButtonPressed" destination="L6Z-56-y9C" id="E84-8E-tjK"/>
+                                    </connections>
+                                </button>
+                                <button width="0.5" alignment="left" title="Red" id="TQe-IW-irI">
+                                    <connections>
+                                        <action selector="onRedColorButtonPressed" destination="L6Z-56-y9C" id="E7a-mn-Cnt"/>
+                                    </connections>
+                                </button>
+                            </items>
+                        </group>
+                    </items>
+                    <connections>
+                        <outlet property="addPointHeaderLabel" destination="gAA-B8-bxg" id="FKr-ru-J5Z"/>
+                        <outlet property="substractPointHeaderLabel" destination="nji-jL-hlz" id="Klh-sd-Kiy"/>
+                        <outlet property="teamColorHeaderLabel" destination="x2R-mT-4fV" id="zwZ-41-GJT"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="692" y="295"/>
+        </scene>
+    </scenes>
+</document>
